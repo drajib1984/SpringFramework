@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    <bean class="com.springcoretutorials.LifeCycleMethods.UsingXML.Course" name="course"
+          init-method="init" destroy-method="destroy">
+        <constructor-arg name="courseFee" value="200"/>
+    </bean>
+    <bean class="com.springcoretutorials.LifeCycleMethods.UsingInterfaces.Pizza" name="pizza">
+       <constructor-arg name="pizzaPrice" value="12"/>
+    </bean>
+    <bean class="com.springcoretutorials.LifeCycleMethods.UsingAnnotation.College" name="college">
+        <constructor-arg name="subject" value="Mechanical Engineering"/>
+        <constructor-arg name="marks" value="75"/>
+        <constructor-arg name="grade" value="A"/>
+    </bean>
+</beans>

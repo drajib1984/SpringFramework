@@ -1,4 +1,4 @@
-package com.springcoretutorials;
+package com.springcoretutorials.SetterInjection;
 
 import com.springcoretutorials.SetterInjection.Student;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

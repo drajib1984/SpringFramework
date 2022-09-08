@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:list list-class="java.util.LinkedList" id="MyBestFriends">
+        <value>Amrit</value>
+        <value>Rupam</value>
+        <value>Rahul</value>
+        <value>Maheswata</value>
+    </util:list>
+
+    <util:map map-class="java.util.HashMap" id="map">
+        <entry key="Java" value="6000"/>
+        <entry key="Python" value="5000"/>
+        <entry key="Django Framework" value="4000"/>
+        <entry key="Hibernate" value="2000"/>
+    </util:map>
+
+    <util:properties id="properties">
+        <prop key="Username">Rajib Das</prop>
+        <prop key="Password">abcd123</prop>
+        <prop key="URL">www.rajibdas.com</prop>
+    </util:properties>
+
+    <bean class="com.springcoretutorials.StandAloneCollections.Person" name="person3">
+        <property name="friends" ref="MyBestFriends"/>
+        <property name="courseDetails" ref="map"/>
+        <property name="properties" ref="properties"/>
+    </bean>
+
+
+</beans>

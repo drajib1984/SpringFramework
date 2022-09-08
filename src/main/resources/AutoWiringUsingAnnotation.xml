@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+    
+    <bean class="com.springcoretutorials.AutoWiring.UsingAnnotation.Statistics" name="statistics1">
+        <constructor-arg name="age" value="38"/>
+        <constructor-arg name="height" value="5.10"/>
+        <constructor-arg name="education" value="Mechanical Engineeering"/>
+    </bean>
+    <bean class="com.springcoretutorials.AutoWiring.UsingAnnotation.Statistics" name="statistics2">
+        <constructor-arg name="age" value="40"/>
+        <constructor-arg name="height" value="4.5"/>
+        <constructor-arg name="education" value="Civil Engineeering"/>
+    </bean>
+    <bean class="com.springcoretutorials.AutoWiring.UsingAnnotation.Statistics" name="statistics3">
+        <constructor-arg name="age" value="20"/>
+        <constructor-arg name="height" value="8.5"/>
+        <constructor-arg name="education" value="Computer Engineeering"/>
+    </bean>
+
+    <bean class="com.springcoretutorials.AutoWiring.UsingAnnotation.Person" name="person2"/>
+</beans>
