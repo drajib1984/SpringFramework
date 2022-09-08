@@ -8,5 +8,13 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("StereoTypeAnnotationConfig.xml");
         Student student = (Student) context.getBean("azad");
         System.out.println(student);
+        System.out.println(student.hashCode());
+
+//singleton
+        Student student1 = (Student) context.getBean("azad");
+        System.out.println(student1.hashCode());
+
+        Student student2 = (Student) context.getBean("azad");
+        System.out.println(student2.hashCode());
     }
 }

@@ -9,18 +9,5 @@
     http://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util.xsd">
-    <context:component-scan base-package="com.springcoretutorials.StereotypeAnnotation"/>
-    <context:annotation-config/>
-    <util:list list-class="java.util.ArrayList" id="list">
-        <value>Ganganagar</value>
-        <value>Dharmanagar</value>
-        <value>Kolkata</value>
-        <value>Bangalore</value>
-        <value>Toronto</value>
-    </util:list>
-    <util:map map-class="java.util.HashMap" id="map2">
-        <entry key="Metric" value="10"/>
-        <entry key="Higher Seecondary" value="2"/>
-        <entry key="Engineering" value="4"/>
-    </util:map>
+<context:component-scan base-package="com.springcoretutorials.SpringExpressionLanguage"/>
 </beans>
